@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ups.cra.icc.idugroute.idugdemo.CRUDUnitTest" time="3.098" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_75\jre\bin"/>
+    <property name="java.vm.version" value="24.75-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ftk1nsy\workspace\ICC\Samples\idugdemo"/>
+    <property name="java.runtime.version" value="1.7.0_75-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_75\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ftk1nsy\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\ftk1nsy\workspace\ICC\Samples\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3385684424656100798.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_75/bin;C:\ProgramData\Oracle\Java\javapath;C:\Users\ftk1nsy\apache-maven-3.3.3\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Users\ftk1nsy\UnxUtils\bin;C:\Users\ftk1nsy\UnxUtils\usr\local\wbin;C:\Program Files\WinZip;C:\Program Files\VisualSVN Server\bin;C:\Program Files\nodejs\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs;C:\HashiCorp\Vagrant\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;;C:\Program Files\Docker Toolbox;C:\Users\ftk1nsy\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\ftk1nsy"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ftk1nsy"/>
+    <property name="java.class.path" value="/C:/Users/ftk1nsy/jbdevstudio8/studio/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_75\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_75"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_75\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_75\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_75\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_75\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_75\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_75\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_75\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_75\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_75\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\ftk1nsy\workspace\ICC\Samples\idugdemo\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testViewAll" classname="com.ups.cra.icc.idugroute.idugdemo.CRUDUnitTest" time="3.098">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:621)
+	at org.junit.Assert.assertNotNull(Assert.java:631)
+	at com.ups.cra.icc.idugroute.idugdemo.CRUDUnitTest.testViewAll(CRUDUnitTest.java:42)
+</failure>
+    <system-out><![CDATA[[                          main] CRUDUnitTest                   INFO  ********************************************************************************
+[                          main] CRUDUnitTest                   INFO  Testing: testViewAll(com.ups.cra.icc.idugroute.idugdemo.CRUDUnitTest)
+[                          main] CRUDUnitTest                   INFO  ********************************************************************************
+[                          main] DefaultCamelContext            INFO  Apache Camel 2.15.1.redhat-621084 (CamelContext: camel-1) is starting
+[                          main] DefaultManagementStrategy      INFO  JMX is disabled
+[                          main] DefaultTypeConverter           INFO  Loaded 186 type converters
+[                          main] SedaEndpoint                   INFO  Endpoint Endpoint[seda://all_devices] is using shared queue: seda://all_devices with size: 2147483647
+[                          main] DefaultCamelContext            INFO  AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+[                          main] DefaultCamelContext            INFO  StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[                          main] CouchbaseConsumer              INFO  Starting Couchbase consumer
+[                          main] DefaultCamelContext            INFO  Route: route1 started and consuming from: Endpoint[couchbase://http://localhost:11210/idug-sample?designDocumentName=idug&viewName=idugview]
+[                          main] DefaultCamelContext            INFO  Total 1 routes, of which 1 is started.
+[                          main] DefaultCamelContext            INFO  Apache Camel 2.15.1.redhat-621084 (CamelContext: camel-1) started in 1.335 seconds
+[://localhost:11210/idug-sample] CouchbaseConsumer              INFO  Received result set from Couchbase
+[                          main] CRUDUnitTest                   INFO  ********************************************************************************
+[                          main] CRUDUnitTest                   INFO  Testing done: testViewAll(com.ups.cra.icc.idugroute.idugdemo.CRUDUnitTest)
+[                          main] CRUDUnitTest                   INFO  Took: 1.472 seconds (1472 millis)
+[                          main] CRUDUnitTest                   INFO  ********************************************************************************
+[                          main] DefaultCamelContext            INFO  Apache Camel 2.15.1.redhat-621084 (CamelContext: camel-1) is shutting down
+[                          main] DefaultShutdownStrategy        INFO  Starting to graceful shutdown 1 routes (timeout 10 seconds)
+[el-1) thread #1 - ShutdownTask] CouchbaseConsumer              INFO  Stopping Couchbase consumer
+[el-1) thread #1 - ShutdownTask] CouchbaseConsumer              INFO  Stopping Couchbase consumer
+[el-1) thread #1 - ShutdownTask] DefaultShutdownStrategy        INFO  Route: route1 shutdown complete, was consuming from: Endpoint[couchbase://http://localhost:11210/idug-sample?designDocumentName=idug&viewName=idugview]
+[                          main] DefaultShutdownStrategy        INFO  Graceful shutdown of 1 routes completed in 0 seconds
+[                          main] DefaultCamelContext            INFO  Apache Camel 2.15.1.redhat-621084 (CamelContext: camel-1) uptime 2.821 seconds
+[                          main] DefaultCamelContext            INFO  Apache Camel 2.15.1.redhat-621084 (CamelContext: camel-1) is shutdown in 0.007 seconds
+]]></system-out>
+    <system-err><![CDATA[2016-10-08 16:34:49.121 INFO net.spy.memcached.auth.AuthThread:  Authenticated to localhost/127.0.0.1:11210
+2016-10-08 16:34:49.144 INFO com.couchbase.client.vbucket.provider.BucketConfigurationProvider:  Could bootstrap through carrier publication.
+2016-10-08 16:34:49.159 INFO com.couchbase.client.CouchbaseConnection:  Added {QA sa=localhost/127.0.0.1:11210, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+2016-10-08 16:34:49.161 INFO com.couchbase.client.CouchbaseClient:  CouchbaseConnectionFactory{bucket='idug-sample', nodes=[http://localhost:11210/pools], order=RANDOM, opTimeout=2500, opQueue=16384, opQueueBlockTime=10000, obsPollInt=10, obsPollMax=500, obsTimeout=5000, viewConns=10, viewTimeout=75000, viewWorkers=1, configCheck=10, reconnectInt=1100, failureMode=Redistribute, hashAlgo=NATIVE_HASH, authWaitTime=2500}
+2016-10-08 16:34:49.209 INFO com.couchbase.client.CouchbaseClient:  viewmode property isn't defined. Setting viewmode to production mode
+2016-10-08 16:34:49.266 INFO net.spy.memcached.auth.AuthThread:  Authenticated to localhost/127.0.0.1:11210
+2016-10-08 16:34:49.844 INFO net.spy.memcached.auth.AuthThread:  Authenticated to localhost/127.0.0.1:11210
+2016-10-08 16:34:49.859 INFO com.couchbase.client.vbucket.provider.BucketConfigurationProvider:  Could bootstrap through carrier publication.
+2016-10-08 16:34:49.861 INFO com.couchbase.client.CouchbaseConnection:  Added {QA sa=localhost/127.0.0.1:11210, #Rops=0, #Wops=0, #iq=0, topRop=null, topWop=null, toWrite=0, interested=0} to connect queue
+2016-10-08 16:34:49.862 INFO com.couchbase.client.CouchbaseClient:  CouchbaseConnectionFactory{bucket='idug-sample', nodes=[http://localhost:11210/pools], order=RANDOM, opTimeout=2500, opQueue=16384, opQueueBlockTime=10000, obsPollInt=10, obsPollMax=500, obsTimeout=5000, viewConns=10, viewTimeout=75000, viewWorkers=1, configCheck=10, reconnectInt=1100, failureMode=Redistribute, hashAlgo=NATIVE_HASH, authWaitTime=2500}
+2016-10-08 16:34:49.865 INFO com.couchbase.client.CouchbaseClient:  viewmode property isn't defined. Setting viewmode to production mode
+2016-10-08 16:34:49.966 INFO net.spy.memcached.auth.AuthThread:  Authenticated to localhost/127.0.0.1:11210
+]]></system-err>
+  </testcase>
+</testsuite>
