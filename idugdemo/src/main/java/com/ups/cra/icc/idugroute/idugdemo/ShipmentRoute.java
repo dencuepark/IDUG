@@ -17,7 +17,7 @@ public class ShipmentRoute extends RouteBuilder {
 
 			@Override
 			public void process(Exchange exchange) throws Exception {
-				//System.out.println("JSON is :" + exchange.getIn().getBody(String.class));	
+				System.out.println("Shipment Route running ! ");	
 			}
 		})
 		
