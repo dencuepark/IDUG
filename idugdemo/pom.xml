@@ -175,6 +175,18 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<configuration>
+					<mainClass>com.ups.cra.icc.idugroute.idugdemo.MainApp</mainClass>
+					<includePluginDependencies>false</includePluginDependencies>
+				</configuration>
+			</plugin>
+
+
 		</plugins>
 	</build>
 </project>
