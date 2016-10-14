@@ -196,11 +196,29 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
+				<!-- <version>1.2.1</version> -->
+				<version>1.4.0</version>
 				<configuration>
 					<mainClass>com.ups.cra.icc.idugroute.idugdemo.MainApp</mainClass>
 					<includePluginDependencies>false</includePluginDependencies>
 				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.jboss.hawt.app</groupId>
+				<artifactId>hawt-app-maven-plugin</artifactId>
+				<version>1.3.0</version>
+				<executions>
+					<execution>
+						<id>hawt-app</id>
+						<goals>
+							<goal>build</goal>
+						</goals>
+						<configuration>
+							<javaMainClass>com.ups.cra.icc.idugroute.idugdemo.MainApp</javaMainClass>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

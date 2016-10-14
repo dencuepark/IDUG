@@ -23,6 +23,15 @@ public class ShipmentRoute extends RouteBuilder {
 		
 		.setHeader(CouchbaseConstants.HEADER_ID,constant(new Random(System.currentTimeMillis()).nextInt())).id("shipmentHeaderId")
 		.to("couchbase:http://localhost:11210/idug-sample?operation=" + CouchbaseConstants.COUCHBASE_PUT)
+		.end()
+		.onException(Exception.class)
+		 .process(new Processor(){
+
+				@Override
+				public void process(Exchange exchange) throws Exception {
+					System.out.println("Exception happened !");	
+				}
+			})
 		.end();
 		 
 		
