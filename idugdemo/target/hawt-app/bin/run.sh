@@ -2,10 +2,10 @@
 
 # ================================================
 # Simple startup script for flat classpath apps
+script_dir=`dirname "$0"`
 
 # Discover JAVA_APP_DIR from the script's location.
-if [ x"${JAVA_APP_DIR}" == x ] ; then
-  script_dir=`dirname "$0"`
+if [ x"${JAVA_APP_DIR}" = x ] ; then
   JAVA_APP_DIR=`cd "$script_dir"/.. ; pwd`
   export JAVA_APP_DIR
 fi
@@ -19,9 +19,9 @@ fi
 main_class=""
 if [ x"${JAVA_MAIN_CLASS}" != x ]; then
   main_class="${JAVA_MAIN_CLASS}"
-elif [ x"com.ups.cra.icc.idugdemo.MainApp" != x ]; then
+elif [ x"com.ups.cra.icc.idugroute.idugdemo.MainApp" != x ]; then
   # If given, interpolated by the plugin
-  main_class="com.ups.cra.icc.idugdemo.MainApp"
+  main_class="com.ups.cra.icc.idugroute.idugdemo.MainApp"
 else
   echo "No JAVA_MAIN_CLASS specified"
   exit 1
@@ -31,7 +31,7 @@ fi
 if [ x"${JAVA_CLASSPATH}" != x ]; then
     classpath="${JAVA_CLASSPATH}"
 else
-    classpath="."
+    classpath=""
     while read file; do
         classpath="${classpath}:${JAVA_APP_DIR}/lib/$file"
     done < ${JAVA_APP_DIR}/lib/classpath

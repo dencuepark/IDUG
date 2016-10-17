@@ -1,7 +1,9 @@
 package com.ups.cra.icc.idugroute.idugdemo;
 
+import org.apache.activemq.camel.component.ActiveMQComponent;
 import org.apache.camel.builder.AdviceWithRouteBuilder;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.test.junit4.CamelTestSupport;
 import org.apache.camel.test.spring.CamelSpringTestSupport;
 import org.apacheextras.camel.component.couchbase.CouchbaseConstants;
 import org.junit.After;
@@ -10,11 +12,15 @@ import org.junit.Test;
 import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-public class ShipmentIntegrationTest extends CamelSpringTestSupport{
-	private AbstractXmlApplicationContext myContext;
+public class ShipmentIntegrationTest extends CamelTestSupport{
+	//private AbstractXmlApplicationContext myContext;
 
 	@Before
 	public void setup() throws Exception {
+
+		ActiveMQComponent activeMQComponent = (ActiveMQComponent) context.getComponent("activemq");
+		activeMQComponent.setUserName("admin");
+	    activeMQComponent.setPassword("admin");
 		context.getRouteDefinitions().get(0)
 				.adviceWith(context, new AdviceWithRouteBuilder() {
 					@Override
@@ -28,7 +34,7 @@ public class ShipmentIntegrationTest extends CamelSpringTestSupport{
 	
 	@Override
 	protected RouteBuilder[] createRouteBuilders() throws Exception {
-		return new RouteBuilder[] { new CleanupRoute() };
+		return new RouteBuilder[] { new ShipmentRoute(), new CleanupRoute() };
 	}
 
 	@Test
@@ -47,7 +53,7 @@ public class ShipmentIntegrationTest extends CamelSpringTestSupport{
 		template.sendBodyAndHeader("direct:cleanup", "dummy", CouchbaseConstants.HEADER_ID, "6");
 	
 	}
-
+/*
 	@Override
 	protected AbstractXmlApplicationContext createApplicationContext() {
 		myContext = new FileSystemXmlApplicationContext(
@@ -55,6 +61,6 @@ public class ShipmentIntegrationTest extends CamelSpringTestSupport{
 
 		return myContext;
 	}
-	
+	*/
 	
 }

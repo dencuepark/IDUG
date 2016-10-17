@@ -19,7 +19,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 
 
-public class ShipmentInsertTest extends CamelSpringTestSupport{
+public class ShipmentInsertTest extends CamelTestSupport{
 	private AbstractXmlApplicationContext myContext;
 
 
@@ -42,7 +42,7 @@ public class ShipmentInsertTest extends CamelSpringTestSupport{
 	
 	@Override
 	protected RouteBuilder[] createRouteBuilders() throws Exception {
-		return new RouteBuilder[] { new CleanupRoute() };
+		return new RouteBuilder[] { new ShipmentRoute(), new CleanupRoute() };
 	}
 
 	@Test
@@ -76,11 +76,11 @@ public class ShipmentInsertTest extends CamelSpringTestSupport{
 	
 	}
 
-	@Override
+	/*@Override
 	protected AbstractXmlApplicationContext createApplicationContext() {
 		myContext = new FileSystemXmlApplicationContext(
 				"src/main/resources/META-INF/spring/camel-context.xml");
 
 		return myContext;
-	}
+	}*/
 }
