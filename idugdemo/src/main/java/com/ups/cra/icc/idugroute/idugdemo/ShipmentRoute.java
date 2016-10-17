@@ -23,12 +23,12 @@ public class ShipmentRoute extends RouteBuilder {
 
 
 		
-	     from("activemq:topic:mqtt.ShipmentInfo")	
+	     from("activemq:topic:mqtt.SensorTag")	
 		 .process(new Processor(){
 
 			@Override
 			public void process(Exchange exchange) throws Exception {
-				System.out.println("Shipment Route running ! ");	
+				System.out.println("Shipment Route running : " + exchange.getIn().getBody(String.class));	
 			}
 		})
 		
