@@ -18,7 +18,7 @@ public class MainApp {
 		
 		CamelContext context = new DefaultCamelContext();
 		ActiveMQComponent activeMQComponent = new ActiveMQComponent();
-		activeMQComponent.setBrokerURL("tcp://www.tcp.amq.idug2016.link:80");
+		activeMQComponent.setBrokerURL("tcp://www.tcp.amq.idug2016.link:61616");
 		//activeMQComponent.setBrokerURL(defaultProps.getProperty("brokerURL"));
 		//activeMQComponent.setBrokerURL("tcp://172.30.84.159:61616");
 		activeMQComponent.setUserName("admin");
