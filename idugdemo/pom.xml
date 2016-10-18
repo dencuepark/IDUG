@@ -15,32 +15,9 @@
 		<activemq-version>5.7.0</activemq-version>
 		<!-- <spring-version>3.2.12.RELEASE</spring-version> -->
 		<maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
-		<fuse.version>6.2.1.redhat-084</fuse.version>
-		<fabric8.version>2.2.0.redhat-079</fabric8.version>
 	</properties>
 
 	<dependencies>
-
-		<!-- fabric8 bom must be before fabric8 bom -->
-		<!-- <dependency>
-			<groupId>io.fabric8</groupId>
-			<artifactId>fabric8-project-bom-with-platform-deps</artifactId>
-			<version>${fabric8.version}</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.fuse.bom</groupId>
-			<artifactId>jboss-fuse-parent</artifactId>
-			<version>${fuse.version}</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.fabric8</groupId>
-			<artifactId>fabric8-cdi</artifactId>
-			<version>${fabric8.version}</version>
-		</dependency> -->
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-core</artifactId>
@@ -145,8 +122,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.7</source>
+					<target>1.7</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>

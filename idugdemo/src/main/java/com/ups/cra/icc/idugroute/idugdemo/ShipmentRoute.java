@@ -9,12 +9,7 @@ import org.apacheextras.camel.component.couchbase.CouchbaseConstants;
 
 public class ShipmentRoute extends RouteBuilder {
 
-	/*fabric8 cdi services*/
-	/*@Inject
-    @ServiceName("broker-amq-tcp")
-    @Alias("activemq")
-    ActiveMQComponent activeMQComponent;
-	*/
+	Random random = new Random();
 	@Override
 	public void configure() throws Exception {
 		
@@ -30,8 +25,7 @@ public class ShipmentRoute extends RouteBuilder {
 
 
 		
-	     //from("activemq:topic:mqtt.SensorTag")	
-		from("activemq:topic:VidhyaTest")	 
+	    from("activemq:topic:mqtt.SensorTag")	 
 		.process(new Processor(){
 
 			@Override
@@ -40,7 +34,7 @@ public class ShipmentRoute extends RouteBuilder {
 			}
 		})
 		
-		.setHeader(CouchbaseConstants.HEADER_ID,constant(new Random(System.currentTimeMillis()).nextInt())).id("shipmentHeaderId")
+		.setHeader(CouchbaseConstants.HEADER_ID,constant(random.nextInt())).id("shipmentHeaderId")
 		//.to("couchbase:http://localhost:11210/idug-sample?operation=" + CouchbaseConstants.COUCHBASE_PUT)
 		.to("couchbase:http://172.30.10.67:11210/shipment?operation=" + CouchbaseConstants.COUCHBASE_PUT)
 		.end();
