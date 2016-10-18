@@ -11,15 +11,15 @@ public class MainApp {
 
 	public static void main(String[] args) throws Exception {
 
-		Properties defaultProps = new Properties();
+		/*Properties defaultProps = new Properties();
 		FileInputStream in = new FileInputStream("./src/main/resources/idug.properties");
 		defaultProps.load(in);
-		in.close();
+		in.close();*/
 		
 		CamelContext context = new DefaultCamelContext();
 		ActiveMQComponent activeMQComponent = new ActiveMQComponent();
 		//activeMQComponent.setBrokerURL("http://www.tcp.amq.idug2016.link:80");
-		activeMQComponent.setBrokerURL(defaultProps.getProperty("brokerURL"));
+		activeMQComponent.setBrokerURL("tcp://172.30.84.159:61616");
 		//activeMQComponent.setBrokerURL("tcp://172.30.84.159:61616");
 		activeMQComponent.setUserName("admin");
 	    activeMQComponent.setPassword("admin");
@@ -29,6 +29,9 @@ public class MainApp {
 		context.start();
 		
 		
+		
+		
+		/*old code*/
 		/*
 		 Main main = new Main(); 
 		 main.enableHangupSupport();

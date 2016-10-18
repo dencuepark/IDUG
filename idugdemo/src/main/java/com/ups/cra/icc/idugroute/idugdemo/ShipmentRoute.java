@@ -9,22 +9,30 @@ import org.apacheextras.camel.component.couchbase.CouchbaseConstants;
 
 public class ShipmentRoute extends RouteBuilder {
 
+	/*fabric8 cdi services*/
+	/*@Inject
+    @ServiceName("broker-amq-tcp")
+    @Alias("activemq")
+    ActiveMQComponent activeMQComponent;
+	*/
 	@Override
 	public void configure() throws Exception {
 		
 		onException(Exception.class).process(new Processor() {
-          public void process(Exchange exchange) throws Exception {
-                          Throwable t = exchange.getProperty(Exchange.EXCEPTION_CAUGHT,Throwable.class);
-                          
-                          if (t != null)
-                                          System.out.print("Exception message is: " + t.getMessage());
-          				}
+			public void process(Exchange exchange) throws Exception {
+				Throwable t = exchange.getProperty(Exchange.EXCEPTION_CAUGHT,
+						Throwable.class);
+
+				if (t != null)
+					System.out.print("Exception message is: " + t.getMessage());
+			}
 		});
 
 
 		
-	     from("activemq:topic:mqtt.SensorTag")	
-		 .process(new Processor(){
+	     //from("activemq:topic:mqtt.SensorTag")	
+		from("activemq:topic:VidhyaTest")	 
+		.process(new Processor(){
 
 			@Override
 			public void process(Exchange exchange) throws Exception {
